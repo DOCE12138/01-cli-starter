@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // 编译后的 JavaScript 版本
+    "target": "ES2022",
+    // 模块系统,使用 ESNext 以支持原生 ESM
+    "module": "ESNext",
+    // 模块解析策略,使用 Bundler 以支持原生 ESM 和 Node.js 的模块解析 import(允许省略后缀)
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    // 跳过 `.d.ts` 检查,提速编译过程
+    "skipLibCheck": true,
+    // 不输出 JS 文件,只做类型检查
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
+}
